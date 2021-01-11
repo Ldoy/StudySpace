@@ -1,0 +1,25 @@
+func followthewall() {
+    if isBlocked && isBlockedRight {
+        turnLeft()
+        moveForward()
+    }
+    else if isBlocked {
+        turnRight()
+        moveForward()
+    }
+    
+    else if !isBlocked && isBlockedLeft && !isBlockedRight{
+        turnRight()
+        moveForward()
+    }
+    
+    else{
+        moveForward()
+    }
+}
+
+while !isOnGem {
+    followthewall()
+}
+
+collectGem()
