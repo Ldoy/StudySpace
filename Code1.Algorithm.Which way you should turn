@@ -1,21 +1,17 @@
-func followthewall() {
-    if isOnClosedSwitch && isBlocked {
-        toggleSwitch()
-        turnLeft()
-        moveForward()
-    }
-    else if isOnClosedSwitch && !isBlocked {
+while !isOnGem {
+    if isOnClosedSwitch && !isBlocked {
         toggleSwitch()
         turnRight()
+        moveForward()
+    }
+    else if isBlocked && isOnClosedSwitch {
+        toggleSwitch()
+        turnLeft()
         moveForward()
     }
     else {
         moveForward()
     }
-}
-
-while !isOnGem {
-    followthewall()
 }
 
 collectGem()
