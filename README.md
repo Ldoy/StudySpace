@@ -6,5 +6,3 @@ notice : 해당 노션에 comment 달아주시면 정말 감사드리겠습니�
 2021.02.27
 1. Swift에서 Type이란? https://www.notion.so/Reveiw-Type-in-Swift-c288d31fc71c445eba52315f1b90a785
 2. Extention 공부(노트정리)
-              
-2023. 02. 28
