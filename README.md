@@ -1,6 +1,8 @@
 # DailyStudyRecord
-매일 공부하는 내용 기록 및 정리 
+매일 공부하는 내용 기록 및 정리
+
 contact : leedoy7989@gmail.com
+
 notice : 해당 노션에 comment 달아주시면 정말 감사드리겠습니다. (혹시라도 해당 노션 노트를 인용하시거나 사용하시는 경우 reference에 언급 부탁드립니다.)
 
 2021.02.27
