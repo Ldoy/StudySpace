@@ -1,5 +1,5 @@
 # DailyStudyRecord
-매일 공부하는 내용 기록 및 정리
+<h1> 매일 공부하는 내용 기록 및 정리 </h1>
 
 contact : leedoy7989@gmail.com
 
