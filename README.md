@@ -9,5 +9,7 @@
 
 2021.02.27
 1. Swift에서 Type이란? https://www.notion.so/Reveiw-Type-in-Swift-c288d31fc71c445eba52315f1b90a785
-2. Extention 공부(노트정리)
+2. Extention 공부(노트앱 이용 정리)
 
+2021.02.28
+1. value의 정의 https://www.notion.so/Review-value-c1b1572923fa45c48aeca8224d27f6b8
