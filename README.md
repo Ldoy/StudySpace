@@ -8,11 +8,9 @@
 
 
 <h1> 구현 진행 중 궁금했던 개념 정리 </h1>
-1. API? : https://www.notion.so/1-API-64da30c1d9f4458cab3310af5273202d
-2. xcode Assects의  1x, 2x, 3x 의 의미
-<ol> 1x : 가로 세로 75px </ol> 
-<ol> 2x : 가로 세로 150px </ol>
-<ol> 3x : 가로 세로 225px </ol>
+<ol> 1. API? : https://www.notion.so/1-API-64da30c1d9f4458cab3310af5273202d </ol>
+<ol> 2. xcode Assects의  1x, 2x, 3x 의 의미 :https://www.notion.so/2-xcode-Assects-1x-2x-3x-0cb107a42b9a490f870bc4d820ae4fe2 </ol>
+
 
 
 <h1> 강의 내용 </h1>
