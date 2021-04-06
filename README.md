@@ -7,9 +7,14 @@
 <ol> 3. 이미지를 앱 대표 아이콘으로 바꾸는 곳 : https://makeappicon.com/ </ol>
 
 
-<h1> 사용된 기술에 대한 정리 </h1>
-1. API
+<h1> 구현 진행 중 궁금했던 개념 정리 </h1>
+1. API?
+https://www.notion.so/1-API-64da30c1d9f4458cab3310af5273202d
 
+2. xcode Assects의  1x, 2x, 3x 의 의미
+1x : 가로 세로 75px
+2x : 가로 세로 150px
+3x : 가로 세로 225px
 
 
 <h1> 강의 내용 </h1>
