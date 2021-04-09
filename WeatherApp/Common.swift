@@ -7,6 +7,7 @@
 
 import Foundation
 
+let apiKey = "9cda367698143794391817f65f81c76e"
 
 //https://home.openweathermap.org 에서 받은 API Key
 
