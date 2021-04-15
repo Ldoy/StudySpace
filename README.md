@@ -2,7 +2,7 @@
 
 Solutions of exercism(https://exercism.io/my/tracks)'s Swift Track 
 
-1. 사용방법
+1. 사용방법<br>
 Home brew를 설치한다 <br>
 터미널에서 exercism 설치한다<br>
 각 문제마다 있는 dwonload주소를 카피해서 터미널에서 실행한다<br>
