@@ -1,0 +1,49 @@
+//My Solutions
+
+func Year(calendarYear: Int) -> Bool {
+    let yearFour = calendarYear % 4
+    let yearHundred = calendarYear % 100
+    let yearFourHun = calendarYear % 400
+    
+    if yearFour == 0 {
+        if yearHundred == 0 {
+            if yearFourHun == 0 {
+                return true
+            }
+            return false
+        }
+        return true
+    } else {
+        return false
+    }
+}
+
+
+// other solution
+
+struct Year1 {
+    let calendarYear: Int
+
+    init(calendarYear: Int) {
+      self.calendarYear = calendarYear
+    }
+
+    var isLeapYear: Bool {
+       get {
+          self.calendarYear % 4 == 0  && 
+          (self.calendarYear % 100 != 0 || self.calendarYear % 400 == 0)
+       }
+    }
+}
+
+/*
+회고 :  get과 struct을 사용. 삼항 연산자를 써서 읽기가 불편한 점을 어떻게 고칠 수 있을까?
+
+ var isLeapYear: Bool {
+       get {
+          let calYearDiv = self.calendarYear
+          calYearDiv % 4 == 0 && 
+          (calYearDiv % 100 != 0 || calYearDiv % 400 == 0)
+       }
+
+*/
