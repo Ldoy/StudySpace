@@ -1,0 +1,73 @@
+var jewlsNumber = 0
+var switchNumber = 0
+
+
+while !isOnClosedSwitch {
+    while jewlsNumber != 3 {
+        if isBlocked && isBlockedLeft {
+            if isOnGem {
+                collectGem()
+                jewlsNumber =  jewlsNumber + 1
+                turnRight()
+                moveForward()
+            } else {
+                turnRight()
+                moveForward()
+            }
+        } else if isBlocked && isBlockedRight {
+            if isOnGem {
+                collectGem()
+                jewlsNumber = jewlsNumber + 1
+                turnLeft()
+                moveForward()
+            } else {
+                turnLeft()
+                moveForward()
+            }
+        } else {
+            if isOnGem {
+                jewlsNumber = jewlsNumber + 1
+                collectGem()
+                moveForward()
+            }
+            else {
+                moveForward()
+        }
+        }
+    }
+    while !isOnClosedSwitch {
+        if isBlocked && isBlockedLeft {
+            turnRight()
+            moveForward()
+        } else if isBlocked && isBlockedRight {
+            turnLeft()
+            moveForward()
+        } else {
+            moveForward()
+        }
+    }
+}
+
+while switchNumber != 4 {
+    if isBlocked && isBlockedLeft {
+        if isOnClosedSwitch{
+            toggleSwitch()
+            switchNumber = switchNumber + 1
+            turnRight()
+            moveForward()
+        } else {
+            turnRight()
+            moveForward()
+        }
+    }
+    else if !isBlocked {
+                if isOnClosedSwitch {
+                    toggleSwitch()
+                    switchNumber = switchNumber + 1
+                    moveForward()
+                } else {
+                    moveForward()
+                }
+            }
+        }
+    

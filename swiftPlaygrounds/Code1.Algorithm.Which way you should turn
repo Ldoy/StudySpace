@@ -1,0 +1,17 @@
+while !isOnGem {
+    if isOnClosedSwitch && !isBlocked {
+        toggleSwitch()
+        turnRight()
+        moveForward()
+    }
+    else if isBlocked && isOnClosedSwitch {
+        toggleSwitch()
+        turnLeft()
+        moveForward()
+    }
+    else {
+        moveForward()
+    }
+}
+
+collectGem()
