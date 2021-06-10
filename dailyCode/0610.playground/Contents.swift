@@ -48,3 +48,21 @@ b.push("a")
 b.items
 b.push("b")
 b.pop()
+
+//Extention Generic type
+var stackOfStrings = Stack<String>()
+stackOfStrings.push("uno")
+stackOfStrings.push("dos")
+stackOfStrings.push("tres")
+
+extension Stack {
+	var topItem: Element? {
+		return items.isEmpty ? nil : items[items.count - 1]
+	}
+}
+//The topItem property returns an optional value of type Element. If the stack is empty, topItem returns nil; if the stack isn’t empty, topItem returns the final item in the items array.
+
+if let topItem = stackOfStrings.topItem {
+	print("The top item on the stack is \(topItem).")
+}
+
