@@ -146,8 +146,24 @@ class StepCounter {
 		}
 	}
 }
+//
+//
+//let test = StepCounter()
+//test.totalSteps = 4
 
+enum fruit {
+	case straw
+	case nana
+	case mango
+}
 
-let test = StepCounter()
-test.totalSteps = 4
+struct Fruit {
+	var count: Int = 10
+	var fruit: fruit {
+		didSet {
+			
+		}
+	}
+}
+
 
