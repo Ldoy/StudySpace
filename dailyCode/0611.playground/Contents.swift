@@ -73,3 +73,100 @@ let minValueInt16 = Int16.min
 let minValueInt32 = Int32.min
 let minValueInt64 = Int64.min
 
+var arrayTest = ["a", "b", "c", "d"]
+var array = Array.init("12345")
+// Array에 init하면 string의 경우해당 요소를 하나씩 쪼갤 수 있음
+print(array)
+var arrayInt = Array.init(arrayLiteral: 12345)
+print(arrayInt)
+
+var arrayRepeating = Array.init(repeating: 5, count: 10)
+arrayRepeating
+
+// 메모리 allocation 관련된 내용.. 아직 이해하기 어려움
+//var arrayUnsafeUnitializedCapacity = Array.init(unsafeUninitializedCapacity: 10, initializingWith: )
+
+//array 를 for loop 돌리기
+
+for repeated in arrayRepeating {
+	print(repeated)
+}
+
+for a in arrayInt {
+	print(a)
+}
+
+var color = Array.init("빨주노초파남보") //  String.Element타입의 배열
+var colors = ["빨", "주", "노", "초"] // String타입의 배열
+
+for colors in color {
+	print("I need \(colors)")
+}
+
+if color.isEmpty {
+	print("I don't have any color")
+} else {
+	print("I have \(color.count) colors")
+}
+
+if let firstElement = colors.first, let lastElement = colors.last {
+	print(firstElement, lastElement, separator: ",")
+}
+
+print(color[0], color[2], separator: ",")
+
+colors.append("연보라")
+colors.insert("연노랑", at: 0)
+
+colors.append(contentsOf: ["연파랑"])
+colors.insert(contentsOf: ["초록"], at: 3)
+
+colors.remove(at: 3)
+colors.removeLast()
+colors.removeLast(1)
+colors.removeFirst(1)
+colors.removeSubrange(1...3)
+colors.firstIndex(of: "빨")
+colors.first
+
+if let first = colors.firstIndex(of: "빨") {
+	colors[first] = "ch"
+}
+
+colors.reserveCapacity(1)
+colors.append("d")
+colors.append("e")
+
+var numbers = [1, 2, 3, 4]
+var numbersCopy = numbers
+
+numbers[0] = 100
+numbers
+numbersCopy
+//
+class IntegerReference {
+	var value = 10
+}
+
+
+var firstIntegers = [IntegerReference(), IntegerReference()]
+var secondIntegers = firstIntegers
+
+firstIntegers[0].value = 100
+print(secondIntegers[0].value)
+
+firstIntegers[0] = IntegerReference() //다시 value 10인 것  assign
+firstIntegers[0].value
+secondIntegers[0].value
+
+for i in 1...colors.count - 1 {
+	print(colors[i])
+}
+
+colors.capacity
+print(colors)
+color.capacity
+color.append("d")
+color.capacity
+color.append("e")
+color.capacity
