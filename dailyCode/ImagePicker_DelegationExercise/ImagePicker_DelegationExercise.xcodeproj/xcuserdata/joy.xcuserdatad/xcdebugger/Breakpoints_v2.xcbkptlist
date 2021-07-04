@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "29047E16-9A15-42FB-B6BA-15E6E1F5D2DF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagePicker_DelegationExercise/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "imagePicker"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - 77873eda5f21f4ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImagePicker_DelegationExercise.ViewController.imagePicker.getter : __C.UIImagePickerController"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - 6653fbb6ee50aef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIImagePickerController in ImagePicker_DelegationExercise.ViewController.imagePicker.getter : __C.UIImagePickerController"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - 3a30bf0c671c50a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImagePicker_DelegationExercise.ViewController.imagePicker.setter : __C.UIImagePickerController"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - 568d62d07360595c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImagePicker_DelegationExercise.ViewController.imagePicker.modify : __C.UIImagePickerController"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - 68d3dd1a97b4f01c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImagePicker_DelegationExercise.ViewController.imagePicker.modify : __C.UIImagePickerController with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - b8886a78f8e0bd81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImagePicker_DelegationExercise.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ImagePicker_DelegationExercise.ViewController"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5B1D2C94-0AD3-406A-AF51-76A4DAF546AD - da2715b1fb1c2cc3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImagePicker_DelegationExercise.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ImagePicker_DelegationExercise.ViewController&gt;"
+                  moduleName = "ImagePicker_DelegationExercise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/studySpace/dailyCode/ImagePicker_DelegationExercise/ImagePicker_DelegationExercise/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E32CEAD9-4407-4047-9202-7EE18A5881E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagePicker_DelegationExercise/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "imagePickerControllerDidCancel(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82229448-D00A-45F3-B204-1FCDDC1B08CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagePicker_DelegationExercise/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
