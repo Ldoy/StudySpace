@@ -18,12 +18,30 @@ class NextViewController: UIViewController {
         print("#1NextVC", #function)
     }
     
+    @objc func deleteChild() {
+//        if let topVC = storyboard?.instantiateViewController(identifier: "topVC") {
+//            topVC.removeFromParent()
+//            topVC.view.removeFromSuperview()
+//        } // 이건 왜 안됨? - 현재있는 childView와 다른 뷰컨이라서인듯
+        
+        for vc in children {
+                vc.view.removeFromSuperview() // 해당 뷰컨이 reponder 체인에서 제거
+                vc.willMove(toParent: self)
+                vc.removeFromParent() // parent 뷰에서 제거
+            }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("#2NextVC", #function)
-      
-        self.addChild(childView)
-        self.view.addSubview(childView)
+        if let topVC = storyboard?.instantiateViewController(identifier: "topVC") {
+            self.addChild(topVC)
+            topVC.didMove(toParent: self)
+            childView.bounds = topVC.view.frame
+            childView.addSubview(topVC.view)
+        }
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteChild))
     }
     
     override func viewWillAppear(_ animated: Bool) {
