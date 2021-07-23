@@ -8,120 +8,113 @@
 
 import Foundation
 
-
-//class PrintPrimes {
-//
-//    static func main() {
-//        let primes = self.findPrimeNumbers()
-//        self.printPrimeNumbers(primes)
-//    }
-class PrimeFinder {
+class PrimeFinder: PrimeSource {
+    
     init(max: Int) {
         self.max = max
     }
     
     let max: Int
+    var primes: [Int] = []
+    var checker = PrimeChecker(source: nil)
     
     func find() -> [Int] {
         self.prepare()
-        var candidate: Int = 1
-        while self.primes.count <= self.max {
-            candidate = candidate + 2
-            if self.isPrime(candidate) {
-                self.primes.append(candidate)
-            }
-        }
+        self.checkOddNubmers()
         return self.primes
     }
     
     func prepare() {
-        self.primes = []
-        self.mult = Array<Int>(repeating: 0, count: ORDMAX + 1)
-        
-        self.primes.append(0)
-        self.primes.append(2)
-        self.ord = 2
-        self.square = 0
+        self.primes = [0, 2]
+        self.checker = PrimeChecker(source: nil)
     }
+    
+    func checkOddNubmers() {
+        var candidate: Int = 3
+        while self.primes.count <= self.max {
+            if self.checker.isPrime(candidate){
+                self.primes.append(candidate)
+            }
+            candidate = candidate + 2
+        }
+    }
+    
+    func primeNumber(at index: Int) -> Int {
+        return self.primes[index]
+    }
+}
+
+protocol PrimeSource: AnyObject {
+    func primeNumber(at index: Int) -> Int
+}
+
+class PrimeChecker {
+    init(source: PrimeSource?) {
+        self.source = source
+        self.mult = Array<Int>(repeating: 0, count: self.ORDMAX + 1)
+        self.ord = 2
+        self.square = 9
+    }
+    
+    weak var source: PrimeSource?
+    
     
     var ord: Int = 0
     var square: Int = 0
     let ORDMAX = 30
-    var primes: [Int] = []
     var mult: [Int] = []
     
     func isPrime(_ candidate: Int) -> Bool {
+        guard let source = self.source else {
+            return false
+        }
+        
         if candidate ==  self.square {
             self.ord += 1
-            self.square = self.primes[ord] * self.primes[ord]
+            self.square = ord *  ord
             self.mult[ord - 1] = candidate
         }
         
-    var n = 2
-        var isPrime = true
-        while n < self.ord && isPrime {
-            while  self.mult[n] < candidate {
-                self.mult[n] = self.mult[n] + self.primes[n] + self.primes[n]
-                
-            }
-            if self.mult[n] == candidate {
-                isPrime = false
+        var n = 2
+        while n < self.ord {
+            if self.isMultipleOfPrimeFactor(candidate: candidate, nth: n) {
+                return false
             }
             n += 1
         }
-        //        let max = 1000
-        //        let ORDMAX = 30
-        //        var primes: [Int] = Array<Int>(repeating: 0, count: max + 1)
-        //        var candidate: Int = 0
-        //        var numberOfPrimes: Int = 0
-        //        var isPrime: Bool = false
-        //        var ord: Int = 0
-        //        var square: Int = 0
-        //        var n: Int = 0
-        //        var mult: [Int] = Array<Int>(repeating: 0, count: ORDMAX + 1)
-        //
-        //        candidate = 1
-        //        numberOfPrimes = 1
-        //        primes[1] = 2
-        //        ord = 2
-        //        square = 9
-        //
-        //        while numberOfPrimes < max {
-        //            repeat {
-        //                candidate = candidate + 2
-        //                if candidate == square {
-        //                    ord = ord + 1
-        //                    square = primes[ord] * primes[ord]
-        //                    mult[ord - 1] = candidate
-        //                }
-        //                n = 2
-        //                isPrime = true
-        //                while n < ord && isPrime {
-        //                    while mult[n] < candidate {
-        //                        mult[n] = mult[n] + primes[n] + primes[n]
-        //                    }
-        //                    if mult[n] == candidate {
-        //                        isPrime = false
-        //                    }
-        //                    n = n + 1
-        //                }
-        //            } while !isPrime
-        //
-        //            numberOfPrimes = numberOfPrimes + 1
-        //            primes[numberOfPrimes] = candidate
-        //        }
-        return isPrime
+        
+        //        return isPrime
+        return true
+    }
+    
+    func isMultipleOfPrimeFactor(candidate: Int, nth: Int) -> Bool {
+        return candidate == self.smallestOddMultiple(notLessThan: candidate, nth: nth)
+    }
+    
+    func smallestOddMultiple(notLessThan candidate: Int, nth n: Int) -> Int {
+        guard let source = self.source else {
+            assert(false)
+        }
+        
+        var multiple = self.mult[n]
+        let primeAtNo = source.primeNumber(at: n)
+        
+        while multiple < candidate {
+            multiple += (primeAtNo * 2)
+            self.mult[n] = multiple
+        }
+        
+        return multiple
     }
 }
+
 
 class NumberPrinter {
     static func printNumber(_ numbers: [Int]) {
         let RR = 50
         let CC = 4
-//        var pageNumber: Int = 0
-//        var pageOffset: Int = 0
         
-       var pageNumber = 1
+        var pageNumber = 1
         var pageOffset = 1
         
         while pageOffset <= numbers.count {
@@ -145,8 +138,9 @@ class NumberPrinter {
 class PrintPrimes {
     static func main() {
         let primes = PrimeFinder(max: 1000).find()
+        assert(primes.last == 7919)
+        assert(primes.last == 1001)
         NumberPrinter.printNumber(primes)
     }
 }
 
-//PrintPrimes.main()
