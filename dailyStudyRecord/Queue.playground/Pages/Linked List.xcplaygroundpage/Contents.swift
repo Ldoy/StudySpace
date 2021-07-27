@@ -64,12 +64,12 @@ class LinkedList {
         }
     }
     
-    func setupDummyNodes() {
-        let four = Node(value: 4, next: nil)
-        let three = Node(value: 3, next: four)
-        let two = Node(value: 2, next: three)
-        head = Node(value: 1, next: two)
-    }
+//    func setupDummyNodes() {
+//        let four = Node(value: 4, next: nil)
+//        let three = Node(value: 3, next: four)
+//        let two = Node(value: 2, next: three)
+//        head = Node(value: 1, next: two)
+//    }
 }
 
 class Node {
