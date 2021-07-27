@@ -3,6 +3,10 @@
     <pages>
         <page name='Array'/>
         <page name='Linked List'/>
-        <page name='Linked LIst  혼자 해보기 '/>
+        <page name='Linked LIst  혼자 해보기 '/>
+        <page name='Linked List 혼자해보기_Generic적용'/>
+        <page name='LinkedList를 위한 Generic'/>
+        <page name='LinkedList 이중연결해보기'/>
+        <page name='테스트'/>
     </pages>
 </playground>

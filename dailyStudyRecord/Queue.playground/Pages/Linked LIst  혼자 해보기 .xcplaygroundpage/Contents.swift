@@ -15,7 +15,6 @@ class Node {
 }
 
 //2. Node에서 enqueue, dequeue, isempty, Clear, Peek 구현하기
-
 class LinkedList {
     
     var head: Node?
@@ -52,22 +51,29 @@ class LinkedList {
     }
     
     //2.2 앞에서만 사라지도록 구현해야하는지 아니면 중간의 노드도 삭제되도록 구현해야 하는지?/ isEmpty재사용가능한 방법은 없을까?. 함수 내부에서 사용가능하도록 하려면,.. 근데 인스턴스로 만들고 사용해야하니까 어려울것 같다. -> 걍 함수 호출하면됨 바부...
-    func dequeue() {
+    func dequeue() -> Int? {
        // 만약 해드가 없다면
         if isEmpty() {
             print("헤드가 없으요")
-            return
+            return nil
         }
         
         // 해드 다음게 해드가 되도록 해야한다
-        head = head?.next
+        defer { head = head?.next }
+//        defer { print("defer1")}
+//        defer { print("defer2") }
+        
+        return head?.value ?? .zero
+//        print(CFGetRetainCount(head))
+//        head = nil
     }
     
     //2.3
     func clear() {
-        while head != nil {
-            dequeue()
-        }
+//        while head != nil {
+//            dequeue()
+//        }
+        head = nil
     }
     
     //2.4
@@ -85,20 +91,17 @@ class LinkedList {
 }
 
 let linkedList = LinkedList()
+CFGetRetainCount(linkedList) // 1
+
 linkedList.enqueue(value: 1)
 linkedList.enqueue(value: 2)
 linkedList.enqueue(value: 3)
-linkedList.peek()
-//linkedList.dequeue()
-//linkedList.dequeue()
-//linkedList.dequeue()
-//linkedList.dequeue()
 
+CFGetRetainCount(linkedList.head?.next) // 1
 
-linkedList.displayListItems()
 linkedList.clear()
 
-linkedList.dequeue()
-linkedList.isEmpty()
+//CFGetRetainCount(linkedList.) // 1
+
 
 //: [Next](@next)
