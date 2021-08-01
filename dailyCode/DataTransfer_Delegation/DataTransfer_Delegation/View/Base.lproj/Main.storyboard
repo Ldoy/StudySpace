@@ -116,6 +116,16 @@
                     <view key="view" contentMode="scaleToFill" id="8cJ-mv-pX5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFx-WD-ZWp">
+                                <rect key="frame" x="151" y="399" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="클로저로 가기"/>
+                                <connections>
+                                    <segue destination="x4l-I9-r4k" kind="show" id="iIo-5N-nVf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vnf-71-gvD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -123,7 +133,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6s-4r-VDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="579"/>
+            <point key="canvasLocation" x="1785.5072463768117" y="578.57142857142856"/>
+        </scene>
+        <!--Closure View Controller-->
+        <scene sceneID="I1W-dt-hB2">
+            <objects>
+                <viewController id="x4l-I9-r4k" customClass="ClosureViewController" customModule="DataTransfer_Delegation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80a-sG-9gN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhK-K0-27K">
+                                <rect key="frame" x="57" y="374" width="300" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8Ct-O6-kXt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="114" id="l3v-Pj-PKx"/>
+                                    <constraint firstAttribute="width" constant="300" id="nCj-tA-Dt0"/>
+                                    <constraint firstAttribute="height" constant="114" id="vSf-oF-181"/>
+                                </constraints>
+                                <state key="normal" title="클로저로 데이터 전달하기 "/>
+                                <connections>
+                                    <action selector="closureButton:" destination="x4l-I9-r4k" eventType="touchUpInside" id="8Pu-em-lfb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yVs-Pm-m3q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NhK-K0-27K" firstAttribute="leading" secondItem="yVs-Pm-m3q" secondAttribute="leading" constant="57" id="JYj-wp-O4j"/>
+                            <constraint firstItem="yVs-Pm-m3q" firstAttribute="bottom" secondItem="NhK-K0-27K" secondAttribute="bottom" constant="374" id="QjS-uT-DAz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3uH-jq-tvU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVr-ZN-djV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2470" y="579"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="IIS-cx-EHy">
