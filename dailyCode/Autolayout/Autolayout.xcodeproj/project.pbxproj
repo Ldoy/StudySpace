@@ -14,6 +14,7 @@
 		A8AC281226B6940F008D8A09 /* Autolayout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC281026B6940F008D8A09 /* Autolayout.xcdatamodeld */; };
 		A8AC281426B69411008D8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC281326B69411008D8A09 /* Assets.xcassets */; };
 		A8AC281726B69411008D8A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC281526B69411008D8A09 /* LaunchScreen.storyboard */; };
+		A8BC98D226B7945900B75BCE /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC98D126B7945900B75BCE /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A8AC281326B69411008D8A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC281626B69411008D8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC281826B69411008D8A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BC98D126B7945900B75BCE /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A8AC280926B6940F008D8A09 /* SceneDelegate.swift */,
 				A8AC280B26B6940F008D8A09 /* ViewController.swift */,
 				A8AC280D26B6940F008D8A09 /* Main.storyboard */,
+				A8BC98D126B7945900B75BCE /* MyView.swift */,
 				A8AC281326B69411008D8A09 /* Assets.xcassets */,
 				A8AC281526B69411008D8A09 /* LaunchScreen.storyboard */,
 				A8AC281826B69411008D8A09 /* Info.plist */,
@@ -142,6 +145,7 @@
 			files = (
 				A8AC280C26B6940F008D8A09 /* ViewController.swift in Sources */,
 				A8AC280826B6940F008D8A09 /* AppDelegate.swift in Sources */,
+				A8BC98D226B7945900B75BCE /* MyView.swift in Sources */,
 				A8AC281226B6940F008D8A09 /* Autolayout.xcdatamodeld in Sources */,
 				A8AC280A26B6940F008D8A09 /* SceneDelegate.swift in Sources */,
 			);
