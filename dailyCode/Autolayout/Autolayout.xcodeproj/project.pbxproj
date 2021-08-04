@@ -15,6 +15,7 @@
 		A8AC281426B69411008D8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC281326B69411008D8A09 /* Assets.xcassets */; };
 		A8AC281726B69411008D8A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC281526B69411008D8A09 /* LaunchScreen.storyboard */; };
 		A8BC98D226B7945900B75BCE /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC98D126B7945900B75BCE /* MyView.swift */; };
+		A8C9173A26BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A8AC281626B69411008D8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC281826B69411008D8A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8BC98D126B7945900B75BCE /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "CookBook_TwoDiff-WidthViews.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A8AC280926B6940F008D8A09 /* SceneDelegate.swift */,
 				A8AC280B26B6940F008D8A09 /* ViewController.swift */,
 				A8AC280D26B6940F008D8A09 /* Main.storyboard */,
+				A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */,
 				A8BC98D126B7945900B75BCE /* MyView.swift */,
 				A8AC281326B69411008D8A09 /* Assets.xcassets */,
 				A8AC281526B69411008D8A09 /* LaunchScreen.storyboard */,
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8AC281726B69411008D8A09 /* LaunchScreen.storyboard in Resources */,
+				A8C9173A26BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard in Resources */,
 				A8AC281426B69411008D8A09 /* Assets.xcassets in Resources */,
 				A8AC280F26B6940F008D8A09 /* Main.storyboard in Resources */,
 			);
