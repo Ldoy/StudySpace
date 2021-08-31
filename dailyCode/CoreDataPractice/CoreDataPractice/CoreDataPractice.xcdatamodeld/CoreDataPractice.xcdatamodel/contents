@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Messenger" representedClassName="Messenger" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <relationship name="phoneBook" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhoneBook"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PhoneBook" representedClassName="PhoneBook" syncable="YES">
+        <attribute name="memo" optional="YES" attributeType="String"/>
+        <attribute name="personName" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <relationship name="phoneBook" optional="YES" maxCount="1" deletionRule="Nullify"/>
+    </entity>
+    <elements>
+        <element name="PhoneBook" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Messenger" positionX="-72.0859375" positionY="-202.23828125" width="128" height="74"/>
+        <element name="Person" positionX="-45" positionY="-63" width="128" height="74"/>
+    </elements>
+</model>

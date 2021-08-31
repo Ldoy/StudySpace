@@ -26,7 +26,6 @@ class ViewController: UIViewController {
                 self.image = reponse.image
                 self.collectionView.reloadData()
                 //이건 뭐임?
-
             }
 
         }
@@ -50,8 +49,6 @@ extension ViewController: UICollectionViewDataSource {
         cell.configure(with: image[indexPath.item])
         return cell
     }
-    
-    
 }
 
 

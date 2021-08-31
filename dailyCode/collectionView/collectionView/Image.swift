@@ -29,9 +29,9 @@ struct Image {
     
     //step15 - 다운로드 받은 이미지를(link) 전달
     func showImage(completion: @escaping (UIImage) -> ()) {
-//        if let image = imageCache.bringCachedImage(forkey: id) {
-//            completion(image)
-//        } else {
+        if let image = imageCache.bringCachedImage(forkey: id) {
+            completion(image)
+        } else {
         NetworkingService.shared.downloadImage(from: link) { image in
             //step18
 
@@ -39,7 +39,6 @@ struct Image {
             DispatchQueue.main.async {
                 completion(image)
             }
-            
         }
     }
 }
