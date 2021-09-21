@@ -168,3 +168,36 @@ class WhiteView: UIView {
         print("⬜️WhiteView의 touchesCancelled 인식 \n")
     }
 }
+
+//MARK:- Experiment5
+
+class it: UIView {
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let hitView: UIView? = super.hitTest(point, with: event)
+        print("🟣TransparentPurpleView 히트테스트")
+        //if hitView == self { return nil }
+        return hitView
+    }
+    
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let point = super.point(inside: point, with: event)
+        print("🟣TransparentPurpleView point메소드, point메소드 반환값: \(point)")
+        return point
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("🟣TransparentPurpleView의 touchesBegan 인식")
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("🟣TransparentPurpleView의 touchesMoved 인식")
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("🟣TransparentPurpleView의 touchesEnded 인식\n")
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("🟣TransparentPurpleView의 touchesCancelled 인식 \n")
+    }
+}
