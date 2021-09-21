@@ -16,57 +16,152 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBN-Ut-arM" customClass="button" customModule="ResponderChainExercise" customModuleProvider="target">
-                                <rect key="frame" x="160" y="416" width="94" height="64"/>
-                                <color key="backgroundColor" red="0.33895421390000002" green="0.57481449839999998" blue="0.27864147659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <state key="normal" title="버튼1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B44-Yc-ceo"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wd-Xc-Pxy">
-                                <rect key="frame" x="100" y="144" width="42" height="21"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqg-tL-tnT" customClass="YellowView" customModule="ResponderChainExercise" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAS-Uk-39U" customClass="BlueView" customModule="ResponderChainExercise" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="467" width="240" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-ge-De3" customClass="PurpleButton" customModule="ResponderChainExercise" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="43" width="180" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="V + G.R + Button">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="JRt-ge-De3" firstAttribute="centerX" secondItem="dAS-Uk-39U" secondAttribute="centerX" id="67v-5G-29h"/>
+                                            <constraint firstItem="JRt-ge-De3" firstAttribute="centerY" secondItem="dAS-Uk-39U" secondAttribute="centerY" id="MkO-Av-a9n"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="WB1-tF-Uyn" appends="YES" id="odk-aa-7Ll"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOa-EA-8i8" customClass="GreenView" customModule="ResponderChainExercise" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="257" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View + GestureR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ol-HA-IDb">
+                                                <rect key="frame" x="30.5" y="49" width="179.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="9Ol-HA-IDb" firstAttribute="centerY" secondItem="DOa-EA-8i8" secondAttribute="centerY" id="AKv-lB-Q37"/>
+                                            <constraint firstItem="9Ol-HA-IDb" firstAttribute="centerX" secondItem="DOa-EA-8i8" secondAttribute="centerX" id="D7G-Lp-sMT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="emM-5A-fEt" appends="YES" id="EXD-Xw-rwm"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Txs-ET-30g" customClass="GrayView" customModule="ResponderChainExercise" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="67" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hitTest, point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-lW-ApH">
+                                                <rect key="frame" x="49.5" y="48.5" width="141" height="31.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                        <constraints>
+                                            <constraint firstItem="xkt-lW-ApH" firstAttribute="centerY" secondItem="Txs-ET-30g" secondAttribute="centerY" id="2IO-OT-MWY"/>
+                                            <constraint firstItem="xkt-lW-ApH" firstAttribute="centerX" secondItem="Txs-ET-30g" secondAttribute="centerX" id="rsQ-D2-kzR"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-bC-jlZ" customClass="WhiteView" customModule="ResponderChainExercise" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="649" width="240" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o49-cY-Xxg" customClass="OrageButton" customModule="ResponderChainExercise" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="47" width="141" height="42"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="V + (B + G.R)">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="8UZ-nB-Ke3" appends="YES" id="xKh-1m-5Bq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="CRr-eD-wlo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Txs-ET-30g" secondAttribute="bottom" constant="657" id="4dj-SK-hol"/>
+                                    <constraint firstItem="DOa-EA-8i8" firstAttribute="leading" secondItem="dAS-Uk-39U" secondAttribute="leading" id="7Oh-WX-J7C"/>
+                                    <constraint firstItem="Vt4-bC-jlZ" firstAttribute="leading" secondItem="iqg-tL-tnT" secondAttribute="leading" constant="87" id="9Bb-cZ-WAU"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAS-Uk-39U" secondAttribute="bottom" constant="257" id="CpZ-HP-rgr"/>
+                                    <constraint firstItem="Txs-ET-30g" firstAttribute="leading" secondItem="DOa-EA-8i8" secondAttribute="leading" id="Dkc-mu-UuK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vt4-bC-jlZ" secondAttribute="trailing" constant="87" id="FIu-qK-RFH"/>
+                                    <constraint firstItem="Txs-ET-30g" firstAttribute="leading" secondItem="iqg-tL-tnT" secondAttribute="leading" constant="87" id="Pfl-Mp-KwR"/>
+                                    <constraint firstItem="dAS-Uk-39U" firstAttribute="top" secondItem="iqg-tL-tnT" secondAttribute="top" constant="467" id="QHq-dL-9Qi"/>
+                                    <constraint firstItem="Txs-ET-30g" firstAttribute="trailing" secondItem="DOa-EA-8i8" secondAttribute="trailing" id="ZWb-iq-JnV"/>
+                                    <constraint firstItem="Vt4-bC-jlZ" firstAttribute="top" secondItem="dAS-Uk-39U" secondAttribute="bottom" constant="54" id="ZmP-qW-XCc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vt4-bC-jlZ" secondAttribute="bottom" constant="75" id="bAd-mN-nBE"/>
+                                    <constraint firstItem="DOa-EA-8i8" firstAttribute="trailing" secondItem="dAS-Uk-39U" secondAttribute="trailing" id="ftP-hG-PBa"/>
+                                    <constraint firstItem="dAS-Uk-39U" firstAttribute="top" secondItem="DOa-EA-8i8" secondAttribute="bottom" constant="82" id="hjv-eQ-pHH"/>
+                                    <constraint firstItem="DOa-EA-8i8" firstAttribute="top" secondItem="iqg-tL-tnT" secondAttribute="top" constant="257" id="jQ4-4n-f3j"/>
+                                    <constraint firstItem="Txs-ET-30g" firstAttribute="top" secondItem="iqg-tL-tnT" secondAttribute="top" constant="67" id="s20-bN-GyG"/>
+                                    <constraint firstItem="Txs-ET-30g" firstAttribute="centerX" secondItem="iqg-tL-tnT" secondAttribute="centerX" id="spV-kx-PGv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lF-FL-mbA" customClass="GreenView" customModule="ResponderChainExercise" customModuleProvider="target">
-                                <rect key="frame" x="100" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qBN-Ut-arM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8pi-OG-eNz"/>
-                            <constraint firstItem="8Wd-Xc-Pxy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="CUV-Lg-bHH"/>
-                            <constraint firstItem="qBN-Ut-arM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b6P-FX-V2W"/>
-                            <constraint firstItem="8Wd-Xc-Pxy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="wml-jn-6MB"/>
+                            <constraint firstItem="iqg-tL-tnT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4JX-Ww-rZQ"/>
+                            <constraint firstItem="iqg-tL-tnT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="72V-dv-C6L"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iqg-tL-tnT" secondAttribute="bottom" constant="-34" id="kTt-4T-PQH"/>
+                            <constraint firstItem="iqg-tL-tnT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wtY-I6-Rfy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="button1" destination="qBN-Ut-arM" id="sNN-om-31V"/>
-                        <outlet property="greenView" destination="5lF-FL-mbA" id="Xz4-7L-pJZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="emM-5A-fEt" customClass="GreenViewGestureRecognizer" customModule="ResponderChainExercise" customModuleProvider="target"/>
+                <tapGestureRecognizer id="WB1-tF-Uyn" customClass="BlueViewGestureRecognizer" customModule="ResponderChainExercise" customModuleProvider="target"/>
+                <tapGestureRecognizer id="8UZ-nB-Ke3" customClass="OrangeButtonGestureRecognizer" customModule="ResponderChainExercise" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="-16" y="71"/>
+            <point key="canvasLocation" x="-210.1449275362319" y="59.598214285714285"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

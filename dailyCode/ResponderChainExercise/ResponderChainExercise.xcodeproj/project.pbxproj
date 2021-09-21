@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		A82B6F4026E99F7000ED0070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F3F26E99F7000ED0070 /* AppDelegate.swift */; };
 		A82B6F4226E99F7000ED0070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F4126E99F7000ED0070 /* SceneDelegate.swift */; };
-		A82B6F4426E99F7000ED0070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F4326E99F7000ED0070 /* ViewController.swift */; };
 		A82B6F4726E99F7000ED0070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82B6F4526E99F7000ED0070 /* Main.storyboard */; };
 		A82B6F4926E99F7100ED0070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82B6F4826E99F7100ED0070 /* Assets.xcassets */; };
 		A82B6F4C26E99F7100ED0070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82B6F4A26E99F7100ED0070 /* LaunchScreen.storyboard */; };
-		A82B6F5426E9A55B00ED0070 /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F5326E9A55B00ED0070 /* GreenView.swift */; };
-		A82B6F5626E9A74800ED0070 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F5526E9A74800ED0070 /* button.swift */; };
+		A82B6F5426E9A55B00ED0070 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F5326E9A55B00ED0070 /* View.swift */; };
+		A82B6F5626E9A74800ED0070 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82B6F5526E9A74800ED0070 /* Button.swift */; };
+		A8480C2126F99EA600286B37 /* GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8480C2026F99EA600286B37 /* GestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A82B6F3C26E99F7000ED0070 /* ResponderChainExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponderChainExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82B6F3F26E99F7000ED0070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A82B6F4126E99F7000ED0070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A82B6F4326E99F7000ED0070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A82B6F4626E99F7000ED0070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A82B6F4826E99F7100ED0070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A82B6F4B26E99F7100ED0070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A82B6F4D26E99F7100ED0070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A82B6F5326E9A55B00ED0070 /* GreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
-		A82B6F5526E9A74800ED0070 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
+		A82B6F5326E9A55B00ED0070 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A82B6F5526E9A74800ED0070 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		A8480C2026F99EA600286B37 /* GestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,33 @@
 		A82B6F3E26E99F7000ED0070 /* ResponderChainExercise */ = {
 			isa = PBXGroup;
 			children = (
-				A82B6F3F26E99F7000ED0070 /* AppDelegate.swift */,
-				A82B6F4126E99F7000ED0070 /* SceneDelegate.swift */,
-				A82B6F4326E99F7000ED0070 /* ViewController.swift */,
+				A8480C2226F9C17400286B37 /* Life Cycle */,
+				A8480C2326F9C17E00286B37 /* CustomUIElement */,
 				A82B6F4526E99F7000ED0070 /* Main.storyboard */,
-				A82B6F5326E9A55B00ED0070 /* GreenView.swift */,
-				A82B6F5526E9A74800ED0070 /* button.swift */,
 				A82B6F4826E99F7100ED0070 /* Assets.xcassets */,
 				A82B6F4A26E99F7100ED0070 /* LaunchScreen.storyboard */,
 				A82B6F4D26E99F7100ED0070 /* Info.plist */,
 			);
 			path = ResponderChainExercise;
+			sourceTree = "<group>";
+		};
+		A8480C2226F9C17400286B37 /* Life Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				A82B6F3F26E99F7000ED0070 /* AppDelegate.swift */,
+				A82B6F4126E99F7000ED0070 /* SceneDelegate.swift */,
+			);
+			path = "Life Cycle";
+			sourceTree = "<group>";
+		};
+		A8480C2326F9C17E00286B37 /* CustomUIElement */ = {
+			isa = PBXGroup;
+			children = (
+				A8480C2026F99EA600286B37 /* GestureRecognizer.swift */,
+				A82B6F5326E9A55B00ED0070 /* View.swift */,
+				A82B6F5526E9A74800ED0070 /* Button.swift */,
+			);
+			path = CustomUIElement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82B6F4426E99F7000ED0070 /* ViewController.swift in Sources */,
-				A82B6F5626E9A74800ED0070 /* button.swift in Sources */,
+				A8480C2126F99EA600286B37 /* GestureRecognizer.swift in Sources */,
+				A82B6F5626E9A74800ED0070 /* Button.swift in Sources */,
 				A82B6F4026E99F7000ED0070 /* AppDelegate.swift in Sources */,
-				A82B6F5426E9A55B00ED0070 /* GreenView.swift in Sources */,
+				A82B6F5426E9A55B00ED0070 /* View.swift in Sources */,
 				A82B6F4226E99F7000ED0070 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
