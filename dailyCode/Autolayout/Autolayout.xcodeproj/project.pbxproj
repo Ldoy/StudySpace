@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A802959F270BE4B000FD1BB9 /* CookBook_v2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A802959E270BE4B000FD1BB9 /* CookBook_v2_ViewController.swift */; };
 		A80295A1270BF0E400FD1BB9 /* StackVIewChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80295A0270BF0E400FD1BB9 /* StackVIewChallenge.swift */; };
+		A80295A3270E8A2B00FD1BB9 /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80295A2270E8A2B00FD1BB9 /* DynamicStackViewController.swift */; };
 		A830336426DF1B8C00EA30DC /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830336326DF1B8C00EA30DC /* SecondVC.swift */; };
 		A830336626DF544400EA30DC /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830336526DF544400EA30DC /* FirstVC.swift */; };
 		A8AC280826B6940F008D8A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC280726B6940F008D8A09 /* AppDelegate.swift */; };
@@ -18,13 +19,13 @@
 		A8AC281226B6940F008D8A09 /* Autolayout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC281026B6940F008D8A09 /* Autolayout.xcdatamodeld */; };
 		A8AC281426B69411008D8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC281326B69411008D8A09 /* Assets.xcassets */; };
 		A8AC281726B69411008D8A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC281526B69411008D8A09 /* LaunchScreen.storyboard */; };
-		A8BC98D226B7945900B75BCE /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BC98D126B7945900B75BCE /* MyView.swift */; };
 		A8C9173A26BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A802959E270BE4B000FD1BB9 /* CookBook_v2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBook_v2_ViewController.swift; sourceTree = "<group>"; };
 		A80295A0270BF0E400FD1BB9 /* StackVIewChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackVIewChallenge.swift; sourceTree = "<group>"; };
+		A80295A2270E8A2B00FD1BB9 /* DynamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
 		A830336326DF1B8C00EA30DC /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		A830336526DF544400EA30DC /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		A8AC280426B6940F008D8A09 /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +37,6 @@
 		A8AC281326B69411008D8A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8AC281626B69411008D8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AC281826B69411008D8A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8BC98D126B7945900B75BCE /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "CookBook_TwoDiff-WidthViews.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +51,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A80295A4270E8A3A00FD1BB9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A8AC280B26B6940F008D8A09 /* ViewController.swift */,
+				A80295A0270BF0E400FD1BB9 /* StackVIewChallenge.swift */,
+				A830336526DF544400EA30DC /* FirstVC.swift */,
+				A80295A2270E8A2B00FD1BB9 /* DynamicStackViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A80295A5270E8A4F00FD1BB9 /* CookBook */ = {
+			isa = PBXGroup;
+			children = (
+				A802959E270BE4B000FD1BB9 /* CookBook_v2_ViewController.swift */,
+				A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */,
+			);
+			path = CookBook;
+			sourceTree = "<group>";
+		};
 		A8AC27FB26B6940F008D8A09 = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +90,12 @@
 		A8AC280626B6940F008D8A09 /* Autolayout */ = {
 			isa = PBXGroup;
 			children = (
+				A80295A5270E8A4F00FD1BB9 /* CookBook */,
+				A80295A4270E8A3A00FD1BB9 /* ViewController */,
 				A8AC280726B6940F008D8A09 /* AppDelegate.swift */,
 				A8AC280926B6940F008D8A09 /* SceneDelegate.swift */,
-				A8AC280B26B6940F008D8A09 /* ViewController.swift */,
 				A8AC280D26B6940F008D8A09 /* Main.storyboard */,
-				A80295A0270BF0E400FD1BB9 /* StackVIewChallenge.swift */,
-				A830336526DF544400EA30DC /* FirstVC.swift */,
-				A8C9173926BA5CA400C03F87 /* CookBook_TwoDiff-WidthViews.storyboard */,
-				A802959E270BE4B000FD1BB9 /* CookBook_v2_ViewController.swift */,
 				A830336326DF1B8C00EA30DC /* SecondVC.swift */,
-				A8BC98D126B7945900B75BCE /* MyView.swift */,
 				A8AC281326B69411008D8A09 /* Assets.xcassets */,
 				A8AC281526B69411008D8A09 /* LaunchScreen.storyboard */,
 				A8AC281826B69411008D8A09 /* Info.plist */,
@@ -164,9 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80295A3270E8A2B00FD1BB9 /* DynamicStackViewController.swift in Sources */,
 				A8AC280C26B6940F008D8A09 /* ViewController.swift in Sources */,
 				A8AC280826B6940F008D8A09 /* AppDelegate.swift in Sources */,
-				A8BC98D226B7945900B75BCE /* MyView.swift in Sources */,
 				A830336626DF544400EA30DC /* FirstVC.swift in Sources */,
 				A80295A1270BF0E400FD1BB9 /* StackVIewChallenge.swift in Sources */,
 				A8AC281226B6940F008D8A09 /* Autolayout.xcdatamodeld in Sources */,

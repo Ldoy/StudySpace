@@ -32,31 +32,41 @@
                                     <segue destination="f9f-rZ-cUK" kind="show" id="Y1v-ZP-eW7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQi-dL-CeK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQi-dL-CeK">
                                 <rect key="frame" x="305" y="363" width="20" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ellipsis.circle" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml5-8n-T4i">
+                                <rect key="frame" x="247" y="585" width="132" height="30"/>
+                                <state key="normal" title="DynamicStackView"/>
+                                <connections>
+                                    <segue destination="xIk-3I-8TF" kind="show" id="6Qc-vw-6CF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rb9-Ma-4hW" secondAttribute="trailing" constant="20" id="01f-Vo-3fZ"/>
+                            <constraint firstItem="ml5-8n-T4i" firstAttribute="top" secondItem="oQi-dL-CeK" secondAttribute="bottom" constant="200" id="0iX-3o-gYj"/>
                             <constraint firstItem="fzR-ES-9bv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="50p-EI-xtl"/>
                             <constraint firstItem="rb9-Ma-4hW" firstAttribute="bottom" secondItem="fzR-ES-9bv" secondAttribute="bottom" id="APP-GF-Ufo"/>
                             <constraint firstItem="rb9-Ma-4hW" firstAttribute="width" secondItem="fzR-ES-9bv" secondAttribute="width" id="UvW-1a-Nhv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fzR-ES-9bv" secondAttribute="bottom" constant="20" id="auX-WQ-g35"/>
                             <constraint firstItem="rb9-Ma-4hW" firstAttribute="leading" secondItem="fzR-ES-9bv" secondAttribute="trailing" constant="50" id="bfh-al-4RH"/>
+                            <constraint firstItem="ml5-8n-T4i" firstAttribute="leading" secondItem="fzR-ES-9bv" secondAttribute="trailing" constant="65" id="eod-E3-dUt"/>
                             <constraint firstItem="fzR-ES-9bv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hES-R8-HUu"/>
                             <constraint firstItem="rb9-Ma-4hW" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fzR-ES-9bv" secondAttribute="trailing" priority="250" constant="20" id="mq4-Fv-zvB"/>
                             <constraint firstItem="rb9-Ma-4hW" firstAttribute="top" secondItem="fzR-ES-9bv" secondAttribute="top" id="rEP-8p-2a0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ml5-8n-T4i" secondAttribute="bottom" constant="247" id="xKy-D0-HCN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ml5-8n-T4i" secondAttribute="trailing" constant="35" id="zzW-7k-bxN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iyd-cd-erd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881.77570093457939" y="70.626349892008648"/>
+            <point key="canvasLocation" x="881.15942028985512" y="70.3125"/>
         </scene>
         <!--CookBook_TwoDiff-WidthViews-->
         <scene sceneID="h77-Nu-zQb">
@@ -86,6 +96,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdm-B1-3OI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1648.5981308411215" y="82.937365010799141"/>
+        </scene>
+        <!--Dynamic Stack View Controller-->
+        <scene sceneID="6el-Nj-o1o">
+            <objects>
+                <viewController id="xIk-3I-8TF" customClass="DynamicStackViewController" customModule="Autolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ilp-G1-KrE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eLb-DG-snu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CMZ-0R-Q4u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qh9-px-Bt2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="802"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tza-xE-HAn">
@@ -140,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iN7-o4-PMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2447.663551401869" y="83.585313174946009"/>
+            <point key="canvasLocation" x="3081" y="28"/>
         </scene>
         <!--StackV Iew Challenge-->
         <scene sceneID="dwN-QC-7j7">
@@ -156,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Do7-SL-SsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2151" y="214"/>
+            <point key="canvasLocation" x="2432" y="82"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hKp-tr-Z2S">
@@ -216,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksp-nm-MDC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3145.7943925233644" y="82.937365010799141"/>
+            <point key="canvasLocation" x="3475" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W47-46-Bfw">
